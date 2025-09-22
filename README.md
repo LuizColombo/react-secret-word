@@ -1,12 +1,113 @@
-# React + Vite
+# React Secret Word
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um jogo simples de adivinhação de palavra feito com React + Vite. O objetivo é descobrir a palavra secreta antes de cometer muitos erros.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Índice
 
-## Expanding the ESLint configuration
+- [Visão Geral](#-visão-geral)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias](#-tecnologias)
+- [Como executar](#-como-executar)
+- [Configuração](#-configuração)
+- [Estrutura de Pastas](#-estrutura-de-pastas)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔍 Visão Geral
+
+Este projeto é um jogo de _palavra secreta_, no estilo “forca/adivinhação”. O jogador tenta adivinhar letras ou a palavra completa, recebendo feedback visual sobre acertos e erros.
+
+Usei React + Vite para fazer um frontend reativo e leve.
+
+---
+
+## ✅ Funcionalidades
+
+Algumas possíveis funcionalidades que já estão implementadas ou que podem ser implementadas:
+
+- Escolha aleatória da palavra secreta
+- Entrada de letras ou palavra completa
+- Feedback visual de letras acertadas e erradas
+- Número limitado de tentativas
+- Estado de vitória ou derrota
+
+---
+
+## 🛠 Tecnologias
+
+- React
+- Vite
+- ESLint (configuração customizada)
+- JavaScript
+- HTML / CSS
+
+---
+
+## 🚀 Como executar
+
+Estes passos assumem que você tem **Node.js** instalado no sistema.
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/LuizColombo/react-secret-word.git
+
+   ```
+
+2. Entre na pasta do projeto:
+
+   ```bash
+   cd react-secret-word
+
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+
+   ```
+
+4. Rode o projeto:
+
+   ```bash
+   npm start
+
+   ```
+
+5. Abra o navegador em http://localhost:3000 (ou porta que o Vite indicar) para ver o projeto funcionando.
+
+---
+
+⚙️ Configuração
+
+- Se quiser mudar ou adicionar funcionalidades:
+- Altere as palavras secretas (por exemplo, manter uma lista de palavras externas ou API)
+- Ajuste o número máximo de tentativas
+- Personalize o estilo visual
+
+---
+
+📂 Estrutura de Pastas
+
+Uma visão geral das pastas do projeto:
+
+```text
+react-secret-word/
+│
+├── public/              # arquivos estáticos
+├── src/                 # código fonte
+│   ├── components/      # componentes React
+│   ├── assets/          # imagens, css, etc
+│   ├── App.jsx          # componente raiz
+│   └── index.jsx        # ponto de entrada
+│
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+```
